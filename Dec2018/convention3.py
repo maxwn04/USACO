@@ -1,7 +1,7 @@
 import math
 
 def convention():
-    with open ('test/1.in') as file:
+    with open ('convention.in') as file:
         lines = file.read().splitlines()
         split = lines[0].split()
         n = int(split[0])
@@ -22,8 +22,8 @@ def convention():
                 arrivalTimes[cow_i+i-1] - arrivalTimes[cow_i])
         #print(time)
         busWaitTime.append(time)
-    # with open('convention.out', 'w') as file:        
-    #     file.write(str(maxwait))
+    with open('convention.out', 'w') as file:        
+        file.write(str(maxwait))
 
 if __name__ == '__main__':
     convention()

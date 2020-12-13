@@ -24,4 +24,14 @@ def mountains():
         file.write(str(peaks))
 
 if __name__ == '__main__':
+    a = [1,2,3,4,5]
+    b = map(lambda x: x**2,a)
+    print(next(b))
+    print(next(b))
+    print(next(b))
+    print(next(b))
+    print(next(b))
+
+    print(b)
+    exit(0)
     mountains()
