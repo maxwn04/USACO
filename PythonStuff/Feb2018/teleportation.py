@@ -2,7 +2,7 @@ import math
 manurePiles = []
 
 def teleportation():
-    with open ('test.in') as file:
+    with open ('teleport.in') as file:
         global manurePiles
         lines = file.read().splitlines()
         split = lines[0].split()
@@ -60,8 +60,8 @@ def teleportation():
         ans = dist(cowEndsUsingTp[y])
         print(ans)
 
-    # with open('teleport.out', 'w') as file:        
-    #     file.write(str(ans))
+    with open('teleport.out', 'w') as file:        
+        file.write(str(ans))
 
 # returns the total distance for a certain tp endpoint
 def dist(y):
