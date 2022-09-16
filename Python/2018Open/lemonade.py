@@ -1,5 +1,5 @@
 def lemonade():
-    with open ('lemonade.in') as file:
+    with open ('test.in') as file:
     	lines = file.read().splitlines()
     	split = lines[0].split()
     	n = int(split[0])
@@ -15,7 +15,7 @@ def lemonade():
     			break
     		lineSize += 1
     	print(lineSize)
-    with open('lemonade.out', 'w') as file:        
+    with open('test.out', 'w') as file:        
         file.write(str(lineSize))
 
 

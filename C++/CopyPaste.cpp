@@ -10,12 +10,18 @@
 
 using namespace std;
 int n;
+#define pii pair<int, int>
+#define vi vector<int>
+#define mii map<int, int>
+#define sp << " " <<
+#define lin << "\n"
+#define ll long long
+#define loops(a, b) for(int i = a; i < b; i++)
+
 
 int main(){
-	ifstream fin ("test.in");
-	ofstream fout ("test.out");
-	fin >> n;
-	fout << n;
+	cin >> n;
+	cout << n;
 
 }
 
@@ -41,6 +47,11 @@ int inputGrid(){
 }
 
 
+int itermap() {
+
+}
+
+// for an n x n box
 vector<vector<int>> memo;
 int dfs(int x, int y, int num){
 	memo[x][y] = 1;

@@ -5,6 +5,7 @@ def main():
 
 	path = list(map(lambda x: int(x), lines))
 	print(a+b)
+	print(path)
 
 def hi(n):
 	print(n+a+b)
